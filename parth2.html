@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🏏 Cricket Registration Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #20002c, #4a148c, #6a1b9a);
+        }
+
+        form {
+            width: 500px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            color: #6a1b9a;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #4a148c;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 2px solid #d1c4e9;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #7b1fa2;
+            box-shadow: 0 0 10px rgba(123, 31, 162, 0.3);
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            accent-color: #7b1fa2;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px dashed #7b1fa2;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #8e24aa, #ab47bc);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>🏏 Cricket Registration Form</h2>
+
+        <label>Player Name</label><br>
+        <input type="text" placeholder="Enter Name">
+        <br><br>
+
+        <label>Age</label><br>
+        <input type="number" placeholder="Enter Age">
+        <br><br>
+
+        <label>Mobile Number</label><br>
+        <input type="tel" placeholder="Enter Mobile Number">
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Email">
+        <br><br>
+
+        <label>Team Name</label><br>
+        <input type="text" placeholder="Enter Team Name">
+        <br><br>
+
+        <label>Jersey Number</label><br>
+        <input type="number" placeholder="Enter Jersey Number">
+        <br><br>
+
+        <label>Date of Birth</label><br>
+        <input type="date">
+        <br><br>
+
+        <label>Player Role</label><br>
+
+        <input type="radio" name="role"> Batsman
+        <input type="radio" name="role"> Bowler
+        <input type="radio" name="role"> All Rounder
+        <input type="radio" name="role"> Wicket Keeper
+
+        <br><br>
+
+        <label>Skills</label><br>
+
+        <input type="checkbox"> Batting
+        <input type="checkbox"> Bowling
+        <input type="checkbox"> Fielding
+        <input type="checkbox"> Keeping
+
+        <br><br>
+
+        <label>Batting Style</label><br>
+        <select>
+            <option>Select</option>
+            <option>Right Handed</option>
+            <option>Left Handed</option>
+        </select>
+
+        <br><br>
+
+        <label>Bowling Style</label><br>
+        <select>
+            <option>Select</option>
+            <option>Fast</option>
+            <option>Medium Pace</option>
+            <option>Off Spin</option>
+            <option>Leg Spin</option>
+        </select>
+
+        <br><br>
+
+        <label>Experience</label><br>
+        <textarea rows="4" placeholder="Enter your cricket experience"></textarea>
+
+        <br><br>
+
+        <label>Upload Photo</label><br>
+        <input type="file">
+
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+
+</html>
